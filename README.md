@@ -1,0 +1,3 @@
+# HTML Element Disappears After Hiding
+
+This repository demonstrates an uncommon bug in HTML where an element completely disappears from the DOM after its `display` style is set to `none` using JavaScript.  The issue is that the standard `style.display = "none"` method only hides the element; it doesn't remove it from the DOM.  The solution involves ensuring the element remains in the DOM, making it readily available for re-display or manipulation. This is different from `remove()`, which permanently removes an element.
